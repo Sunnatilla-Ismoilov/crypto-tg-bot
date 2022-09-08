@@ -3,7 +3,7 @@ from telebot import types
 import json
 import requests
 
-token = '5522189306:AAGmOdwvvL-yYJpPlnL_KBp_omeiFRfIOf8'
+token = 'YOUR_TELEGRAM_BOT_API'
 bot = telebot.TeleBot(token)
 
 res = requests.get('https://cbu.uz/ru/arkhiv-kursov-valyut/json/')
