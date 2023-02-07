@@ -2,8 +2,11 @@ import telebot
 from telebot import types
 import json
 import requests
+import os
 
-token = 'YOUR_TELEGRAM_BOT_API'
+with open('token.txt') as file:
+    token = file.read()
+
 bot = telebot.TeleBot(token)
 
 res = requests.get('https://cbu.uz/ru/arkhiv-kursov-valyut/json/')
