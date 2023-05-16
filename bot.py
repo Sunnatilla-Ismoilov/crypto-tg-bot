@@ -4,7 +4,7 @@ import json
 import requests
 import os
 
-with open('PATH_TO_TOKEN_FILE') as file:
+with open('token.txt') as file:
     token = file.read()
 
 bot = telebot.TeleBot(token)
